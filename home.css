@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    overflow: hidden;
+}
+main {
+    width: 100%;
+    height: 85vh;
+    background-image: url(main/img/ceuu.png);
+    box-sizing: border-box;
+    font-family: 'Press Start 2P', cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title {
+    font-size: clamp(0.5em, 4em, 5vw);
+    color: black;
+}
+main a {
+    text-decoration: none;
+}
+.start{
+    margin-top: 10%;
+    width: 20%;
+    height: 15%;
+    border-radius: 30px;
+    border: 2px solid black;
+    background-color: #0F52BA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Press Start 2P', cursive;
+}
+.start h2 {
+    font-size: 1.5em;
+    color: black;
+}
+.start:hover{
+    opacity: 80%;
+}
+.img1 {
+    height: 120px;
+    position: relative;
+    bottom: 120%;
+    left: 10%;
+}
+.img2 {
+    height: 110px;
+    float: right;
+    position: relative;
+    bottom: 110%;
+    right: 10%;
+}
+footer {
+    width: 100%;
+    height: 15vh;
+    background-image: url(main/img/terramaior.png);
+}

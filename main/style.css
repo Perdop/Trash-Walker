@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#corpo{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    background-image: url("img/ceuu.png");
+}
+
+#pontuacao{
+    margin-bottom: 90vh;
+    margin-left: 1vw;
+}
+#sol{
+    background-image: url("img/sol.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 67vh;
+    margin-left: 70vw;
+    width: 20vw;
+    height: 37vh;
+    position: absolute;
+}
+
+#objeto{
+    display: flex;
+    background-image: url("img/corrida.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+#objeto2{
+    position: absolute;
+    display: flex;
+    background-image: url("img/caminhao.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: left;
+}
+
+.chao{
+    height: 10vh;
+    width: 105%;
+    background-image: url("img/terramaior.png");
+    margin-left: -5vw;
+}
