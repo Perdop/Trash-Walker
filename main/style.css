@@ -1,6 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 *{
     padding: 0;
     margin: 0;
+}
+
+#restartBtn{
+    display: none;
+    text-decoration: none;
+    position: absolute;
+    color: black;
+    align-self: center;
+    padding: 3cqmin;
+    background-color: #3fba0f;
+    font-family: 'Press Start 2P', cursive;
+    border: solid 1px black;
+    border-radius: 3cqmin;
+}
+#restartBtn:hover{
+    opacity: 80%;
 }
 
 #corpo{

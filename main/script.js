@@ -51,6 +51,7 @@ function main() {
     console.log(alturaObjPulo);
     if(marginRightObj2 >= 150 && marginRightObj2 <= 175 && alturaObjPulo <= 125){
         var colisao = true;
+        $("#restartBtn").css({"display" : "block"});
     }
     if (colisao == true){
         clearInterval(mainLoop); 

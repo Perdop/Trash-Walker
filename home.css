@@ -18,8 +18,49 @@ main {
     justify-content: center;
     align-items: center;
 }
+.info{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: #3fba0fb9;
+    border-radius: 0 4cqmin 4cqmin 0;
+    padding: 2cqmin;
+    left: 0;
+    width: 20vw;
+    top: 10vh;
+    color: rgb(236, 236, 236);
+}
+.info h1{
+    font-size: 1.5vw;
+    margin-bottom: 2cqmin;
+}
+.info p{
+    font-size: 2cqmin;
+    margin-bottom: 1.5cqmin;
+}
+.credits{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: #3fba0fb9;
+    border-radius: 4cqmin 0 0 4cqmin;
+    padding: 2cqmin;
+    right: 0;
+    width: 20vw;
+    top: 10vh;
+    color: rgb(236, 236, 236);
+}
+.credits h1{
+    font-size: 1.5vw;
+    margin-bottom: 2cqmin;
+}
+.credits p{
+    font-size: 2cqmin;
+    margin-bottom: 1.5cqmin;
+}
+
 .title {
-    font-size: clamp(0.5em, 4em, 5vw);
+    font-size: 3vw;
     color: black;
 }
 main a {
@@ -31,10 +72,11 @@ main a {
     height: 15%;
     border-radius: 30px;
     border: 2px solid black;
-    background-color: #0F52BA;
+    background-color: #3fba0f;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 2vw;
     font-family: 'Press Start 2P', cursive;
 }
 .start h2 {
