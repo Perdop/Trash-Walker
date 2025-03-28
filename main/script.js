@@ -178,6 +178,46 @@ var placar = setInterval(pont, 1000);
             var subir = setInterval(pulo_subir, 5)
             contador = 0;
         }
+
+
+        
+        function pulo_subir(){
+            if (alturaObjPulo == 200) {
+                clearInterval(subir);
+                tempo = setInterval(timer,100);
+            } else {
+                alturaObjPulo = alturaObjPulo + 2;
+                document.getElementById("objeto").style.backgroundImage = sprite_pulo;
+            }
+        }
+        
+        function timer(){
+            contador++;
+            if (contador == 1){
+                clearInterval(tempo);
+                contador = 0;
+                descer = setInterval(pulo_descer, 5);
+            }
+        }
+        
+        function pulo_descer(){
+            if (alturaObjPulo == 0) {
+                clearInterval(descer);
+            } else {
+                alturaObjPulo = alturaObjPulo - 2;
+            }
+        }
+    
+    
+    })
+
+    window.addEventListener('click', (event) => {
+        if (alturaObjPulo == 0) {
+            var subir = setInterval(pulo_subir, 5)
+            contador = 0;
+        }
+
+
         
         function pulo_subir(){
             if (alturaObjPulo == 200) {
