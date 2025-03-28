@@ -31,7 +31,7 @@ var movimentoObj2 = marginLeftObj2 + (-marginRightObj2);
 var posicaoObjeto2 = movimentoObj2;
 
 var colisao = false;
-var pontos = 44;
+var pontos = 0;
 var velocidadeObj2 = 1;
 ///
 
@@ -91,22 +91,71 @@ function main() {
         document.getElementById("corpo").style.backgroundImage = "url('img/Noite.png')";
         document.getElementById("pontuacao").style.color = "white";
         document.getElementById("sol").style.backgroundImage = "url('img/Lua.png')";
+        velocidadeObj2 = 1.05;
     }    
     if(pontos > 100){
-        document.getElementById("corpo").style.backgroundImage = "url('img/ceuu.png')";
+        document.getElementById("corpo").style.backgroundImage = "url('img/ceu2.png')";
         document.getElementById("pontuacao").style.color = "black";
         document.getElementById("sol").style.backgroundImage = "url('img/Sol.png')";
+        velocidadeObj2 = 1.1;
     }
-    if(pontos > 200){
-        document.getElementById("corpo").style.backgroundImage = "url('img/Noite.png')";
+    if(pontos > 150){
+        document.getElementById("corpo").style.backgroundImage = "url('img/Noite2.png')";
         document.getElementById("pontuacao").style.color = "white";
         document.getElementById("sol").style.backgroundImage = "url('img/Lua.png')";
+        velocidadeObj2 = 1.15;
     }  
-    if(pontos > 300){
-        document.getElementById("corpo").style.backgroundImage = "url('img/ceuu.png')";
+    if(pontos > 200){
+        document.getElementById("corpo").style.backgroundImage = "url('img/ceu3.png')";
         document.getElementById("pontuacao").style.color = "black";
         document.getElementById("sol").style.backgroundImage = "url('img/Sol.png')";
-    }    
+        velocidadeObj2 = 1.2;
+    }  
+    if(pontos > 250){
+        document.getElementById("corpo").style.backgroundImage = "url('img/Noite3.png')";
+        document.getElementById("pontuacao").style.color = "white";
+        document.getElementById("sol").style.backgroundImage = "url('img/Lua.png')";
+        velocidadeObj2 = 1.25;
+    }   
+    if(pontos > 300){
+        document.getElementById("corpo").style.backgroundImage = "url('img/ceu4.png')";
+        document.getElementById("pontuacao").style.color = "black";
+        document.getElementById("sol").style.backgroundImage = "url('img/Sol.png')";
+        velocidadeObj2 = 1.3;
+    }   
+    if(pontos > 350){
+        document.getElementById("corpo").style.backgroundImage = "url('img/Noite4.png')";
+        document.getElementById("pontuacao").style.color = "white";
+        document.getElementById("sol").style.backgroundImage = "url('img/Lua.png')";
+        velocidadeObj2 = 1.35;
+    }   
+    if(pontos > 400){
+        document.getElementById("corpo").style.backgroundImage = "url('img/ceu5.png')";
+        document.getElementById("pontuacao").style.color = "black";
+        document.getElementById("sol").style.backgroundImage = "url('img/Sol.png')";
+        velocidadeObj2 = 1.4;
+    }   
+    if(pontos > 450){
+        document.getElementById("corpo").style.backgroundImage = "url('img/Noite5.png')";
+        document.getElementById("pontuacao").style.color = "white";
+        document.getElementById("sol").style.backgroundImage = "url('img/Lua.png')";
+        velocidadeObj2 = 1.45;
+    } 
+    if(pontos > 500){
+        document.getElementById("corpo").style.backgroundImage = "url('img/ceu6.png')";
+        document.getElementById("pontuacao").style.color = "black";
+        document.getElementById("sol").style.backgroundImage = "url('img/Sol.png')";
+        velocidadeObj2 = 1.5;
+    }   
+    if(pontos > 550){
+        document.getElementById("corpo").style.backgroundImage = "url('img/Noite6.png')";
+        document.getElementById("pontuacao").style.color = "white";
+        document.getElementById("sol").style.backgroundImage = "url('img/Lua.png')";
+        velocidadeObj2 = 1.55;
+    }   
+    if(pontos > 650){
+        velocidadeObj2 = 1.7;
+    }   
 }
 
 var mainLoop = setInterval(main, 10);

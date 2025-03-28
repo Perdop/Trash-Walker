@@ -58,6 +58,13 @@ main {
     font-size: 2cqmin;
     margin-bottom: 1.5cqmin;
 }
+.credits a{
+    color: rgb(236, 236, 236);
+}
+.credits p:hover{
+    scale: 105%;
+    opacity: 70%;
+}
 
 .title {
     font-size: 3vw;
@@ -65,6 +72,24 @@ main {
 }
 main a {
     text-decoration: none;
+}
+#language{
+    display: block;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 3;
+    background-color: rgb(255, 8, 0);
+    font-family: 'Press Start 2P', cursive;
+    padding: 2cqmin;
+    border: solid 1px black;
+    margin-bottom: 3cqmin;
+    margin-right: 3cqmin;
+    border-radius: 10cqmin;
+}
+#language:hover{
+    opacity: 70%;
+    scale: 110%;
 }
 .start{
     margin-top: 10%;
@@ -84,6 +109,26 @@ main a {
     color: black;
 }
 .start:hover{
+    opacity: 80%;
+}
+.aprendizado{
+    margin-top: 2cqmin;
+    padding: 3cqmin;
+    border-radius: 30px;
+    border: 2px solid black;
+    background-color: #0f2eba;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5vw;
+    letter-spacing: 0.5cqmin;
+    font-family: 'Press Start 2P', cursive;
+}
+.aprendizado h2 {
+    font-size: 1.5em;
+    color: white;
+}
+.aprendizado:hover{
     opacity: 80%;
 }
 .img1 {
