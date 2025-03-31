@@ -33,15 +33,20 @@
 #pontuacao{
     margin-bottom: 90vh;
     margin-left: 1vw;
+    display: flex;
+    left: 0;
+    position: absolute;
 }
 #sol{
+    display: flex;
     background-image: url("img/sol.png");
-    background-size: cover;
+    background-size: 150%;
     background-repeat: no-repeat;
-    margin-bottom: 67vh;
-    margin-left: 70vw;
-    width: 20vw;
-    height: 37vh;
+    background-position: center;
+    top: 0;
+    right: 0;
+    width: 200px;
+    aspect-ratio: 1/1;
     position: absolute;
 }
 
@@ -57,14 +62,17 @@
     position: absolute;
     display: flex;
     background-image: url("img/caminhao.png");
-    background-size: cover;
+    background-size: 110%;
+    height: min-content;
+    width: min-content;
     background-repeat: no-repeat;
-    background-position-x: left;
+    background-position-x:center;
+    background-position-y:130%;
 }
 
 .chao{
     height: 10vh;
-    width: 105%;
+    width: 150%;
     background-image: url("img/terramaior.png");
     margin-left: -5vw;
 }

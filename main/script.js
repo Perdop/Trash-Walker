@@ -36,7 +36,6 @@ var velocidadeObj2 = 1;
 ///
 
 
-
 function main() {
 
     ///
@@ -49,7 +48,9 @@ function main() {
 
     ///
     console.log(alturaObjPulo);
-    if(marginRightObj2 >= 150 && marginRightObj2 <= 175 && alturaObjPulo <= 125){
+    let elemento = document.getElementById("objeto2");
+    let tamanho = elemento.getBoundingClientRect();
+    if(marginRightObj2 >= 150 && marginRightObj2 <= 175 && alturaObjPulo <= tamanho.height){
         var colisao = true;
         $("#restartBtn").css({"display" : "block"});
     }
@@ -79,7 +80,7 @@ function main() {
 
     ///
 
-    $("#objeto").css({"margin-bottom": alturaObjPulo});
+    $("#objeto").css({"margin-bottom": alturaObjPulo + "px"});
 
     ///
 
@@ -180,11 +181,13 @@ var placar = setInterval(pont, 1000);
         }
 
 
-        
+        let elemento = document.getElementById("objeto2");
+        let tamanho = elemento.getBoundingClientRect();
+
         function pulo_subir(){
-            if (alturaObjPulo == 200) {
+            if (alturaObjPulo >= 2.2 * tamanho.height) {
                 clearInterval(subir);
-                tempo = setInterval(timer,100);
+                tempo = setInterval(timer,200);
             } else {
                 alturaObjPulo = alturaObjPulo + 2;
                 document.getElementById("objeto").style.backgroundImage = sprite_pulo;
@@ -196,7 +199,7 @@ var placar = setInterval(pont, 1000);
             if (contador == 1){
                 clearInterval(tempo);
                 contador = 0;
-                descer = setInterval(pulo_descer, 5);
+                descer = setInterval(pulo_descer, 2);
             }
         }
         
@@ -204,7 +207,7 @@ var placar = setInterval(pont, 1000);
             if (alturaObjPulo == 0) {
                 clearInterval(descer);
             } else {
-                alturaObjPulo = alturaObjPulo - 2;
+                alturaObjPulo = alturaObjPulo - 1;
             }
         }
     
@@ -217,10 +220,12 @@ var placar = setInterval(pont, 1000);
             contador = 0;
         }
 
+        let elemento = document.getElementById("objeto2");
+        let tamanho = elemento.getBoundingClientRect();
 
         
         function pulo_subir(){
-            if (alturaObjPulo == 200) {
+            if (alturaObjPulo >= 2.2 * tamanho.height) {
                 clearInterval(subir);
                 tempo = setInterval(timer,100);
             } else {
@@ -234,7 +239,7 @@ var placar = setInterval(pont, 1000);
             if (contador == 1){
                 clearInterval(tempo);
                 contador = 0;
-                descer = setInterval(pulo_descer, 5);
+                descer = setInterval(pulo_descer, 2);
             }
         }
         
@@ -242,7 +247,7 @@ var placar = setInterval(pont, 1000);
             if (alturaObjPulo == 0) {
                 clearInterval(descer);
             } else {
-                alturaObjPulo = alturaObjPulo - 2;
+                alturaObjPulo = alturaObjPulo - 1;
             }
         }
     
